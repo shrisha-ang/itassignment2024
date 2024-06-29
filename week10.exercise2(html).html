@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name and Student ID Input</title>
+    <script>
+        function displayInfo() {
+
+            var name = prompt("Enter your name:");
+            var studentId = prompt("Enter your student ID:");
+
+
+            if (name !== null && studentId !== null) {
+
+                var message = "Your Name: " + name + "\nStudent ID: " + studentId;
+
+                alert(message);
+            } else {
+                alert("Invalid input. Please provide both your name and student ID.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <button onclick="displayInfo()">Click to Input Name and Student ID</button>
+
+</body>
+
+</html>

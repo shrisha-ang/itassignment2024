@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Function to Calculate Area of Rectangle</title>
+</head>
+
+<body>
+    <script>
+        function calculateRectangleArea(length, breadth) {
+            if (typeof length !== 'number' || typeof breadth !== 'number') {
+                return 'Error: Both length and breadth must be numbers.';
+            }
+            if (length <= 0 || breadth <= 0) {
+                return 'Error: Both length and breadth must be greater than zero.';
+            }
+            return length * breadth;
+        }
+
+        // Example usage:
+        let length = 5;
+        let breadth = 10;
+        let area = calculateRectangleArea(length, breadth);
+        document.write("Area of rectangle: " + area);
+    </script>
+</body>
+
+</html>

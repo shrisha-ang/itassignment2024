@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+header .logo {
+    width: 100px;
+    height: 50px;
+    background-color: #ccc;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header .contact-info {
+    text-align: right;
+}
+
+main {
+    padding: 20px;
+}
+
+.clients {
+    margin-bottom: 20px;
+}
+
+.clients .client-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.clients .client {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.clients .client-logo {
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.additional-info .info-block {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.additional-info .map {
+    flex: 2;
+}
+
+.additional-info .map .map-image {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+}

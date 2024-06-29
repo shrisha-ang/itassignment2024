@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Exercise</title>
+    <style>
+        img {
+            display: block;
+            margin: 10px 0;
+        }
+        
+        #image1 {
+            border: 5px solid black;
+        }
+        
+        #image2 {
+            width: 100px;
+            height: 100px;
+        }
+        
+        #image3 {
+            float: left;
+            /* or float: right; depending on requirement */
+            margin-right: 10px;
+            /* adjust margin as needed */
+        }
+        
+        #image4 {
+            display: block;
+            margin: 50px auto;
+            /* Centers horizontally */
+        }
+        
+        .text-align {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="image1" src="image1.jpeg" alt="Image 1">
+    <a href="image2.jpeg">
+        <img id="image2" src="image2.jpeg" alt="Image 2">
+    </a>
+    <img id="image3" src="image3.jpeg" alt="Image 3">
+    <div class="text-align">
+        <img id="image4" src="image4.jpeg" alt="Image 4">
+        <p>Align the text with respect to the images to obtain the appropriate output</p>
+    </div>
+</body>
+
+</html>

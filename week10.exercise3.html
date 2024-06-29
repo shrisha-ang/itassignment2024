@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluate Marks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function evaluateMarks() {
+
+            let marks = prompt("Enter your marks:");
+
+
+            marks = parseFloat(marks);
+
+            if (marks >= 80 && marks <= 100) {
+                alert("Distinction");
+            } else if (marks >= 60 && marks < 80) {
+                alert("First Division");
+            } else if (marks >= 50 && marks < 60) {
+                alert("Second Division");
+            } else if (marks >= 40 && marks < 50) {
+                alert("Third Division");
+            } else if (marks < 40) {
+                alert("Fail");
+            } else {
+                alert("Invalid input. Please enter valid marks.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Evaluate Marks</h2>
+        <button onclick="evaluateMarks()">Click to Evaluate Marks</button>
+    </div>
+
+</body>
+
+</html>
